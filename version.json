@@ -1,0 +1,8 @@
+{
+  "versionCode": 45,
+  "versionName": "3.14",
+  "apkUrl": "https://github.com/itamarsandes/brazictv-releases/releases/download/v3.14/BrazicTV-v3.14.apk",
+  "changelog": "🔄 Sistema de atualização automática\n✅ Notificação de novas versões\n📥 Download e instalação direta",
+  "forceUpdate": false,
+  "minVersionCode": 40
+}

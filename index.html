@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazic TV - Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #0d0d3d 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .version {
+            color: #F1C40F;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .changelog {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .changelog h3 {
+            color: #00d4ff;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .changelog ul {
+            list-style: none;
+            padding: 0;
+        }
+        .changelog li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .changelog li::before {
+            content: "✅ ";
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #7b2ff7, #00d4ff);
+            color: white;
+            text-decoration: none;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(123, 47, 247, 0.4);
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 30px rgba(123, 47, 247, 0.6);
+        }
+        .download-btn:focus {
+            outline: 3px solid #F1C40F;
+            transform: scale(1.08);
+        }
+        .instructions {
+            margin-top: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .instructions h3 {
+            color: #F1C40F;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        .code {
+            display: inline-block;
+            background: rgba(123, 47, 247, 0.3);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 18px;
+            color: #F1C40F;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #555;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        // Auto-redirect to APK download after 2 seconds on Downloader app
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('auto') === '1') {
+            setTimeout(function() {
+                window.location.href = document.getElementById('download-link').href;
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📺</div>
+        <h1>Brazic TV</h1>
+        <div class="version" id="version-text">v3.14</div>
+
+        <div class="changelog">
+            <h3>📋 Novidades</h3>
+            <ul id="changelog-list">
+                <li>Sistema de atualização automática</li>
+                <li>Notificação de novas versões</li>
+                <li>Download e instalação direta</li>
+            </ul>
+        </div>
+
+        <a id="download-link" class="download-btn" href="https://github.com/itamarsandes/brazictv-releases/releases/download/v3.14/BrazicTV-v3.14.apk">
+            📥 BAIXAR APK
+        </a>
+
+        <div class="instructions">
+            <h3>📱 Como instalar via Downloader</h3>
+            <ol>
+                <li>Abra o app <strong>Downloader</strong> no Fire Stick</li>
+                <li>Digite o código: <span class="code">brazictv.pages.dev</span></li>
+                <li>Clique em <strong>Go</strong></li>
+                <li>Clique no botão <strong>BAIXAR APK</strong></li>
+                <li>Após o download, clique em <strong>Instalar</strong></li>
+            </ol>
+        </div>
+
+        <p class="footer">© 2026 Brazic TV - Todos os direitos reservados</p>
+    </div>
+</body>
+</html>

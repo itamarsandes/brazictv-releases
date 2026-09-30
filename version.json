@@ -1,8 +1,8 @@
 {
-  "versionCode": 45,
-  "versionName": "3.14",
-  "apkUrl": "https://github.com/itamarsandes/brazictv-releases/releases/download/v3.14/BrazicTV-v3.14.apk",
-  "changelog": "🔄 Sistema de atualização automática\n✅ Notificação de novas versões\n📥 Download e instalação direta",
-  "forceUpdate": false,
+  "versionCode": 50,
+  "versionName": "3.19",
+  "apkUrl": "https://github.com/itamarsandes/brazictv-releases/releases/download/v3.19/BrazicTV-v3.19.apk",
+  "changelog": "🚀 Novo painel de alta velocidade\n🔐 Correção de liberação para assistir canais\n⚡ Multi-DNS inteligente com failover",
+  "forceUpdate": true,
   "minVersionCode": 40
 }

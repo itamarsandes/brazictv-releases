@@ -1,8 +1,8 @@
 {
-  "versionCode": 52,
-  "versionName": "3.21",
-  "apkUrl": "https://github.com/itamarsandes/brazictv-releases/releases/download/v3.21/BrazicTV-v3.21.apk",
-  "changelog": "✅ Conexão mais estável: escolhe sozinho o servidor que funciona na sua internet\n🔄 Recupera sozinho quando o canal ao vivo para de carregar\n🛠️ Abre mais leve e rápido",
+  "versionCode": 53,
+  "versionName": "3.22",
+  "apkUrl": "https://github.com/itamarsandes/brazictv-releases/releases/download/v3.22/BrazicTV-v3.22.apk",
+  "changelog": "✅ Troca de servidor automática, sem limpar cache\n🎬 Filmes e séries continuam de onde pararam se a conexão falhar\n📺 Canais ao vivo mais estáveis\n🔒 Senha só nos canais adultos",
   "forceUpdate": false,
   "minVersionCode": 40
 }
